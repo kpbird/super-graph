@@ -1,6 +1,7 @@
 steps:
   # Build image with tag 'latest'
   - name: "gcr.io/cloud-builders/docker"
+    dir: "/"
     args:
       [
         "build",
