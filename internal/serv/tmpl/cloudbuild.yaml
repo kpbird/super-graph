@@ -8,6 +8,7 @@ steps:
         "gcr.io/$PROJECT_ID/{{- .AppNameSlug -}}:latest",
         "--build-arg",
         "GO_ENV=production",
+        "-f internal/serv/tmpl/Dockerfile"
         ".",
       ]
 
